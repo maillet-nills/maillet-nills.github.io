@@ -1,0 +1,28 @@
+body {
+  background-color: #0c0c0c;
+  color: #e0e0e0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* NAVBAR */
+.btn-gradient {
+  background: linear-gradient(45deg, #6d1eb8, #221eff);
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  border-radius: 0.5rem;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(26, 26, 46, 0.5);
+}
+
+/* FOOTER */
+.footer a:hover {
+  color: #8a2be2;
+  text-decoration: underline;
+}
