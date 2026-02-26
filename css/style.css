@@ -1,11 +1,21 @@
 body {
-  background-color: #0c0c0c;
+  background-color: #060607;
   color: #e0e0e0;
   font-family: "Segoe UI", sans-serif;
 }
 
+h1 {
+  margin-left: -6px;
+}
+
+.profile-img {
+  width: 400px;
+  height: 400px 
+}
+
 /* NAVBAR */
 .btn-gradient {
+
   background: linear-gradient(45deg, #6d1eb8, #221eff);
   border: none;
   color: #ffffff;
@@ -21,8 +31,94 @@ body {
   box-shadow: 0 5px 15px rgba(26, 26, 46, 0.5);
 }
 
+.btn-outline-hero {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline-hero:hover {
+  background: #ffffff;
+  color: #0c0c0c;
+}
+
 /* FOOTER */
 .footer a:hover {
   color: #8a2be2;
   text-decoration: underline;
+}
+
+/* SKILLS */
+.skills-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(109, 30, 184, 0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.skills-label {
+  color: #1b9eea;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.skills-title {
+  color: #e0e0e0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.skills-highlight {
+  color: #03d24c;
+}
+
+.skills-category {
+  color: #ff6900;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  font-family: monospace;
+  margin-bottom: 0.25rem;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 0.75rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  color: #c0c0d0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: border-color 0.3s, transform 0.3s, background 0.3s;
+  cursor: default;
+}
+
+.skill-card:hover {
+  border-color: rgba(109, 30, 184, 0.6);
+  background: rgba(109, 30, 184, 0.08);
+  transform: translateY(-4px);
+  color: #ffffff;
+}
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
