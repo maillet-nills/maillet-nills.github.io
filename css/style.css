@@ -1,9 +1,14 @@
 body {
   background-color: #060607;
   color: #e0e0e0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+}
 h1 {
   margin-left: -6px;
 }
@@ -14,6 +19,28 @@ h1 {
 }
 
 /* NAVBAR */
+.nav-link {
+  position: relative;
+  font-family: sans-serif;
+  font-weight: 600 !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #6d1eb8;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 70%;
+}
+
 .btn-gradient {
 
   background: linear-gradient(45deg, #6d1eb8, #221eff);
@@ -87,10 +114,9 @@ h1 {
 }
 
 .skills-category {
-  color: #ff6900;
-  font-size: 0.85rem;
+  color: #ffcc02;
+  font-size: 1.2rem;
   letter-spacing: 0.1em;
-  font-family: monospace;
   margin-bottom: 0.25rem;
 }
 
