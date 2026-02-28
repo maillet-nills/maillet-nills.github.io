@@ -8,19 +8,50 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: "Outfit", sans-serif;
 }
 h1 {
   margin-left: -6px;
 }
+.justify {
+  text-align: justify;
+}
 
 .profile-img {
-  width: 400px;
+  max-width: 400px;
   height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .profile-img {
+    max-width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  h1.display-1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  .btn-outline-hero {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .project-image {
+    max-width: 100%;
+  }
 }
 
 /* NAVBAR */
@@ -85,7 +116,7 @@ h1 {
 
 /* PROJECTS*/
 .project-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 0.75rem;
   padding: 2rem !important;

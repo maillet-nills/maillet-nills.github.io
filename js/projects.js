@@ -25,7 +25,7 @@ async function fetchProjects() {
                             <img src="${project.image}" alt="${project.name}" class="img-fluid project-image" />
                         </div>
                         <div class="mb-4">
-                            <p>${project.description}</p>
+                            <p class="justify">${project.description}</p>
                         </div>
                         <div class="row g-4">
                             <p class="skills-category"><strong>Used technologies</strong></p>
