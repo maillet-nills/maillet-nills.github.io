@@ -1,35 +1,69 @@
-# Personal Portfolio
+# 🗂️ Personal Portfolio – Nills Maillet
 
-This project is my personal portfolio, currently under development, to showcase my projects, skills, and experience in web development and IT.
+![Portfolio preview](images/portfolio_preview.png)
 
-## Objective
+This portfolio is a personal project built to showcase my work, skills, and tech watch.
+Developed with a modern frontend stack, it uses **Supabase** as a PostgreSQL backend to dynamically load content without rebuilding the site.
+Hosted on **GitHub Pages**, it reflects my approach to clean, maintainable, and scalable web development.
 
-The goal of this project is to build a modern, responsive portfolio that highlights my work and abilities, while also serving as a practical playground for improving my web development skills.
+---
 
-## Tech Stack
+## 🎯 Objectives
 
-**Frontend:**
-- HTML5 / CSS3
-- JavaScript
-- Bootstrap
+- Build a modern and responsive personal portfolio
+- Connect a frontend to a cloud database (Supabase)
+- Dynamically load project data without a traditional backend
+- Apply Row Level Security (RLS) to protect data
+- Improve skills in HTML, CSS, JavaScript and Bootstrap
 
-**Backend:**
-- JavaScript (Node.js)
+---
 
-**Database / Hosting:**
-- Supabase (PostgreSQL database and hosting)
+## 🛠️ Technologies used
 
-**Version Control:**
-- Git / GitHub
+- **HTML5** – page structure
+- **CSS3** – styling and layout
+- **Bootstrap** – responsive design and components
+- **JavaScript** – dynamic interactions and DOM manipulation
+- **Supabase** – PostgreSQL cloud database and storage
 
-## Planned Features
+---
 
-- Home page / Hero section
-- Projects showcase page
-- Tech-Watch page about PQC (Post-Quantum Cryptography)
-- Contact page with a functional form
-- ...
+## 🗂️ Project structure
 
-## Notes
+- /config
+  - supabase.js
+- /css
+  - style.css
+- /images
+- /includes
+  - header.html
+  - footer.html
+- /js
+  - main.js
+  - projects.js
+  - contact.js
+  - tech-watch.js
+- /pages
+  - projects.html
+  - contact.html
+  - tech-watch.html
+- index.html
+- README.md
 
-This README will be updated as the portfolio develops. Screenshots and demos will be added once the pages are complete.
+---
+
+## ✨ Main features
+
+- Dynamic project showcase loaded from Supabase
+- Contact form with data stored in Supabase
+- Row Level Security (RLS) configured to protect sensitive data
+- Shared header and footer via JavaScript fetch
+- Fully responsive design with Bootstrap
+- Tech Watch page dedicated to Post-Quantum Cryptography (PQC)
+
+---
+
+## 👨‍💻 Author
+
+Maillet Nills  
+Computer Science Student – BTS SIO
