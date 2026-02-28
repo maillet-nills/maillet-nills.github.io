@@ -1,13 +1,18 @@
 body {
   background-color: #060607;
   color: #e0e0e0;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
   line-height: 1.7;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Outfit', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif;
 }
 h1 {
   margin-left: -6px;
@@ -15,7 +20,7 @@ h1 {
 
 .profile-img {
   width: 400px;
-  height: 400px 
+  height: 400px;
 }
 
 /* NAVBAR */
@@ -42,7 +47,6 @@ h1 {
 }
 
 .btn-gradient {
-
   background: linear-gradient(45deg, #6d1eb8, #221eff);
   border: none;
   color: #ffffff;
@@ -63,7 +67,9 @@ h1 {
   border: 2px solid #ffffff;
   color: #ffffff;
   padding: 0.75rem 1.5rem;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .btn-outline-hero:hover {
@@ -75,6 +81,66 @@ h1 {
 .footer a:hover {
   color: #8a2be2;
   text-decoration: underline;
+}
+
+/* PROJECTS*/
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 0.75rem;
+  padding: 2rem !important;
+  transition:
+    border-color 0.3s,
+    transform 0.3s,
+    background 0.3s;
+}
+
+.project-image {
+  border-radius: 0.75rem;
+  object-fit: cover;
+  max-width: 70%;
+  height: auto;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #6d1eb8;
+}
+
+.tech-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 0.75rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  color: #c0c0d0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition:
+    border-color 0.3s,
+    transform 0.3s,
+    background 0.3s;
+  cursor: default;
+}
+
+.tech-card:hover {
+  border-color: rgba(109, 30, 184, 0.6);
+  background: rgba(109, 30, 184, 0.08);
+  transform: translateY(-4px);
+  color: #ffffff;
+}
+
+.tech-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 /* SKILLS */
@@ -91,7 +157,11 @@ h1 {
   transform: translateX(-50%);
   width: 600px;
   height: 300px;
-  background: radial-gradient(ellipse, rgba(109, 30, 184, 0.15), transparent 70%);
+  background: radial-gradient(
+    ellipse,
+    rgba(109, 30, 184, 0.15),
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -132,7 +202,10 @@ h1 {
   color: #c0c0d0;
   font-size: 0.9rem;
   font-weight: 500;
-  transition: border-color 0.3s, transform 0.3s, background 0.3s;
+  transition:
+    border-color 0.3s,
+    transform 0.3s,
+    background 0.3s;
   cursor: default;
 }
 
