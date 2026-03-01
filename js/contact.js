@@ -1,3 +1,5 @@
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 async function sendMessage() {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
@@ -5,6 +7,11 @@ async function sendMessage() {
 
   if (!name || !email || !message) {
     alert("Please fill in all fields.");
+    return;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address.");
     return;
   }
 
