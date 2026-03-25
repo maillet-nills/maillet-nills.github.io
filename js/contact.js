@@ -37,16 +37,17 @@ async function sendMessage(event) {
   }
 
   try {
-    const { data, error } = await supabaseClient
-      .from("contacts")
-      .insert([{ name, email, message }]);
-
+    const { data, error } = await supabaseClient.functions.invoke(
+      "bright-endpoint",
+      {
+        body: { name, email, message },
+      },
+    );
     if (error) {
       console.error("Error sending message:", error);
       showAlert("Failed to send your message ! Please try again.", "danger");
     } else {
       showAlert("Your message has been sent successfully !", "success");
-
       document.getElementById("contact-form").reset();
     }
   } catch (error) {
