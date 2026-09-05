@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Klee+One:wght@400;600&family=Public+Sans:wght@400;500&display=swap');
+
+:root {
+  --color-bg: #10160f;
+  --color-surface: #1b2a1e;
+  --color-border: #2e3b2f;
+  --color-accent: #d9a851;
+  --color-accent-dark: #c2934f;
+  --color-text-heading: #f4f1e6;
+  --color-text-strong: #f4f1e6;
+  --color-text-body: #c7d0c2;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Public Sans', system-ui, sans-serif;
+  --font-jp: 'Klee One', 'Fraunces', serif;
+
+  --max-width: 1160px;
+  --radius: 6px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text-body);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--color-text-heading);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+p { margin: 0 0 1rem; }
+
+a {
+  color: var(--color-text-strong);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+a:hover { border-color: var(--color-accent); }
+
+.jp-text {
+  font-family: var(--font-jp);
+  font-weight: 600;
+}
+
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
+
+.card { background: var(--color-surface); border-radius: var(--radius); padding: 1.5rem; }
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-accent);
+  color: var(--color-text-strong);
+  font-family: var(--font-body);
+  font-weight: 500;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover { background: var(--color-accent); color: var(--color-bg); border-color: var(--color-accent); }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
