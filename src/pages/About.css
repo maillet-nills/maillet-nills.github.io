@@ -122,4 +122,10 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
     }
+
+    .photo-grid .photo:nth-child(1):first-child {
+        grid-column: 1 / -1;
+        aspect-ratio: 16 / 10;
+        object-position: center 30%;
+    }
 }
