@@ -1,15 +1,15 @@
 ﻿import './About.css';
 
 const photos = [
-    { src: 'src/assets/photo-1.jpg', alt: 'Water monitor lizard on a lotus leaf' },
-    { src: 'src/assets/photo-2.jpg', alt: 'Stork wading in still water' },
-    { src: 'src/assets/photo-3.jpg', alt: 'Portrait of a monkey' },
+    { src: '/assets/photo-1.jpg', alt: 'Water monitor lizard on a lotus leaf' },
+    { src: '/assets/photo-2.jpg', alt: 'Stork wading in still water' },
+    { src: '/assets/photo-3.jpg', alt: 'Portrait of a monkey' },
 ];
 
 const calligraphyPhotos = [
-    { src: 'src/assets/calligraphy-1.jpg', alt: 'Japanese characters written in ink' },
-    { src: 'src/assets/calligraphy-2.jpg', alt: 'Japanese characters written in ink' },
-    { src: 'src/assets/calligraphy-3.jpg', alt: 'Japanese characters written in ink' },
+    { src: '/assets/calligraphy-1.jpg', alt: 'Japanese characters written in ink' },
+    { src: '/assets/calligraphy-2.jpg', alt: 'Japanese characters written in ink' },
+    { src: '/assets/calligraphy-3.jpg', alt: 'Japanese characters written in ink' },
 ];
 
 export default function About() {
@@ -57,7 +57,7 @@ export default function About() {
                 </p>
                 <div
                     className="video-shot"
-                    style={{ backgroundImage: "url('src/assets/davinci.png')" }}
+                    style={{ backgroundImage: "url('/assets/davinci.png')" }}
                 />
             </section>
 
@@ -95,7 +95,7 @@ export default function About() {
                     </p>
                 </div>
                 <div className="reading-shot"
-                style={{ backgroundImage: "url('src/assets/reading-shot.jpg')" }}
+                style={{ backgroundImage: "url('/assets/reading-shot.jpg')" }}
                 >
 
                 </div>

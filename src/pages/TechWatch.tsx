@@ -116,7 +116,7 @@ export default function TechWatch() {
                 <div className="obsidian-block">
                     <div className="obsidian-shot">
                         <img
-                            src="src/assets/vault-preview.png"
+                            src="/assets/vault-preview.png"
                             alt="My Obsidian vault used to log post-quantum cryptography tech watch notes"
                             loading="lazy"
                         />
