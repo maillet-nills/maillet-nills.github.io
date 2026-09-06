@@ -159,7 +159,7 @@ export default function Home() {
                         </div>
                     ))}
                 </div>
-                <a className="cv-link" href="public/assets/cv-nills-maillet.pdf" target="_blank" rel="noreferrer" download>
+                <a className="cv-link" href="/assets/cv-nills-maillet.pdf" target="_blank" rel="noreferrer" download>
                     <svg
                         width="16"
                         height="16"
