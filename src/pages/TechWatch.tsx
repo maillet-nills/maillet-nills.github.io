@@ -122,7 +122,8 @@ export default function TechWatch() {
                         />
                     </div>
                     <div className="obsidian-caption">
-                        <p>Every kept article ends up logged and cross-linked in this vault.</p>
+                        <p>Every kept article ends up logged and cross-linked in this vault and every modification is uploaded
+                            each week.</p>
                         <a
                             className="vault-link"
                             href="https://drive.google.com/drive/folders/1fYLpUNyom1N2A93T1XYzG4XbJ457KwSh?usp=drive_link"
