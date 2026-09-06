@@ -57,7 +57,7 @@ const currentFocus = [
     {
         label: 'Post-quantum cryptography watch',
         detail: 'Following NIST FIPS 203/204/205 (ML-KEM, ML-DSA, SLH-DSA).',
-        link: '#/tech-watch',
+        link: 'https://drive.google.com/drive/folders/1fYLpUNyom1N2A93T1XYzG4XbJ457KwSh?usp=drive_link',
         linkLabel: 'See my tech watch',
     }
 ];
