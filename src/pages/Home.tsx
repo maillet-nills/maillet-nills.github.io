@@ -43,7 +43,7 @@ const projects = [
         title: 'Personal portfolio',
         description: 'This website, made with the React framework and pure CSS.',
         stack: 'ReactJS',
-        link: 'https://github.com/maillet-nills/portfolio',
+        link: 'https://github.com/maillet-nills/maillet-nills.github.io',
     },
 ];
 
