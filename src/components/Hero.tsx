@@ -14,7 +14,7 @@ export default function Hero() {
                     </p>
                     <div className="actions">
                         <Link className="btn" to="/about">Learn more about me</Link>
-                        <a href="mailto:mailletnills@gmail.com">Get in touch</a>
+                        <a href="https://www.linkedin.com/in/nills-maillet-9299a9382" target="_blank" rel="noopener noreferrer">Get in touch</a>
                     </div>
                 </div>
 
