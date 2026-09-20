@@ -47,16 +47,14 @@ const usefulLinks = [
 ];
 
 const spotlight = {
-    date: 'September 2026',
-    title: 'NIST FIPS 203, 204, 205 — standardization',
-    source: 'NIST',
-    text: "NIST finalized the first post-quantum cryptography standards: ML-KEM (key encapsulation, formerly Kyber), ML-DSA (digital signatures, formerly Dilithium), and SLH-DSA (stateless hash-based signatures, formerly SPHINCS+).",
-    whyItMatters: "This is the moment PQC stopped being theoretical for me — these are now the concrete algorithms any real migration plan has to target.",
-    tags: ['ML-KEM', 'ML-DSA', 'SLH-DSA'],
-    url: 'https://csrc.nist.gov/pubs/fips/203/final',
+    date: 'September 16th 2026',
+    title: '2026 Post-Quantum Cryptography Summit by the GSA',
+    source: 'Post-Quantum Cryptography Alliance',
+    text: "GSA will host this hybrid event bringing together federal leaders, industry partners, and subject matter experts to chart the path toward quantum-resistant cryptography.",
+    whyItMatters: "Marks a key operational transition where U.S. federal agencies (via GSA) align procurement pathways, acquisition frameworks, and crypto-agility strategies to meet mandatory PQC migration deadlines.",
+    tags: ['GSA', 'PQC-adoption', 'Crypto-agility'],
+    url: 'https://pqca.org/event/2026-post-quantum-cryptography-summit/',
 };
-
-// Remplace cet objet à chaque fois qu'un nouvel article te marque
 
 export default function TechWatch() {
     return (
