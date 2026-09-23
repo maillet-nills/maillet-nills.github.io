@@ -1,15 +1,15 @@
 ﻿import './About.css';
 
 const photos = [
-    { src: '/assets/photo-1.jpg', alt: 'Water monitor lizard on a lotus leaf' },
-    { src: '/assets/photo-2.jpg', alt: 'Stork wading in still water' },
-    { src: '/assets/photo-3.jpg', alt: 'Portrait of a monkey' },
+    { src: '/assets/photo-1.webp', alt: 'Water monitor lizard on a lotus leaf' },
+    { src: '/assets/photo-2.webp', alt: 'Stork wading in still water' },
+    { src: '/assets/photo-3.webp', alt: 'Portrait of a monkey' },
 ];
 
 const calligraphyPhotos = [
-    { src: '/assets/calligraphy-1.jpg', alt: 'Japanese characters written in ink' },
-    { src: '/assets/calligraphy-2.jpg', alt: 'Japanese characters written in ink' },
-    { src: '/assets/calligraphy-3.jpg', alt: 'Japanese characters written in ink' },
+    { src: '/assets/calligraphy-1.webp', alt: 'Japanese characters written in ink' },
+    { src: '/assets/calligraphy-2.webp', alt: 'Japanese characters written in ink' },
+    { src: '/assets/calligraphy-3.webp', alt: 'Japanese characters written in ink' },
 ];
 
 export default function About() {
@@ -38,7 +38,7 @@ export default function About() {
                 </p>
                 <div className="photo-grid">
                     {photos.map((photo) => (
-                        <img key={photo.src} className="photo" src={photo.src} alt={photo.alt} loading="lazy" />
+                        <img key={photo.src} className="photo" src={photo.src} alt={photo.alt} fetchPriority="high" />
                     ))}
                 </div>
                 <p className="photo-caption">
@@ -57,7 +57,7 @@ export default function About() {
                 </p>
                 <div
                     className="video-shot"
-                    style={{ backgroundImage: "url('/assets/davinci.png')" }}
+                    style={{ backgroundImage: "url('/assets/davinci.webp')" }}
                 />
             </section>
 

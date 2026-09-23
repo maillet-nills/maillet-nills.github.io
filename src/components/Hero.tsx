@@ -19,7 +19,7 @@ export default function Hero() {
                 </div>
 
                 <div className="hero-image">
-                    <img src="/assets/hero.jpg" alt="Hero Photography" />
+                    <img src="/assets/hero.webp" alt="Hero Photography" fetchPriority="high" />
                 </div>
             </div>
         </section>
