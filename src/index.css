@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Klee+One:wght@400;600&family=Public+Sans:wght@400;500&display=swap');
 
 :root {
-  --color-bg: #10160f;
+  --color-bg: #090d09;
   --color-surface: #1b2a1e;
   --color-border: #2e3b2f;
+  --color-chrome: #050805;
   --color-accent: #d9a851;
   --color-accent-dark: #c2934f;
   --color-text-heading: #f4f1e6;
@@ -21,9 +21,14 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
+html { overscroll-behavior-y: none; }
 
 body {
-  background: var(--color-bg);
+  /* Vignette sombre sur les bords. Les formes animées (FloatingShapes) passent par-dessus. */
+  background:
+          radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.5) 100%),
+          var(--color-bg);
+  background-attachment: fixed;
   color: var(--color-text-body);
   font-family: var(--font-body);
   line-height: 1.6;

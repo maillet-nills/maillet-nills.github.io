@@ -1,0 +1,67 @@
+.floating-shapes {
+    --shape-line: #5f7a66;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.shape {
+    --shape-color: var(--shape-line);
+    position: absolute;
+    opacity: 0.22;
+    animation-name: drift;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    will-change: transform;
+}
+
+.shape--accent {
+    --shape-color: var(--color-accent);
+    opacity: 0.22;
+}
+
+.shape--square,
+.shape--circle {
+    border: 2px solid var(--shape-color);
+}
+.shape--circle { border-radius: 50%; }
+
+.shape--triangle {
+    fill: none;
+    stroke: var(--shape-color);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    overflow: visible;
+}
+.shape--triangle polygon { vector-effect: non-scaling-stroke; }
+
+.shape--filled.shape--square,
+.shape--filled.shape--circle {
+    background: color-mix(in srgb, var(--shape-color) 10%, transparent);
+}
+.shape--filled.shape--triangle {
+    fill: color-mix(in srgb, var(--shape-color) 10%, transparent);
+}
+
+@keyframes drift {
+    0% {
+        transform: translate3d(0, 0, 0) rotate(var(--rot));
+    }
+    50% {
+        transform: translate3d(28px, -36px, 0) rotate(calc(var(--rot) + 90deg));
+    }
+    100% {
+        transform: translate3d(-24px, 30px, 0) rotate(calc(var(--rot) + 180deg));
+    }
+}
+
+@media (max-width: 640px) {
+    .shape:nth-child(n + 7) { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .shape { animation: none; }
+}
