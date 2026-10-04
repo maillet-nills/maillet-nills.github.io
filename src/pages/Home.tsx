@@ -54,9 +54,9 @@ const currentFocus = [
         linkLabel: 'Semgrep Academy',
     },
     {
-        label: 'Certified Junior Cybersecurity Analyst (HTB CJCA)',
+        label: 'Certified Junior Cybersecurity Associate (HTB CJCA)',
         detail: 'Learning core SOC operations, threat analysis, incident response, and security monitoring through Hack The Box. The CJCA certification validates practical hands-on skills required for entry-level cybersecurity analyst roles.',
-        link: 'https://academy.hackthebox.com/preview/certifications/htb-certified-junior-cybersecurity-analyst',
+        link: 'https://academy.hackthebox.com/preview/certifications/htb-certified-junior-cybersecurity-associate',
         linkLabel: 'Hack The Box Academy',
     },
     {
