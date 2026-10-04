@@ -1,28 +1,27 @@
-﻿import Hero from '../components/Hero';
+﻿import { Link } from 'react-router-dom';
+import Hero from '../components/Hero';
 import './Home.css';
 
 const experience = [
     {
         role: 'Network Technician (Fixed-term contract)',
         place: 'SNS Solutions, IT services company',
-        period: 'July — August 2026',
+        period: 'July to August 2026',
         missions: [
-            'Provided N1-N2 support for SME clients: ticket resolution, Stormshield firewall configuration, and VPN setup.',
-            'Administered hosted VoIP (3CX) and managed OVH Cloud infrastructure for client environments.',
-            'Handled endpoint security deployment and monitoring across client fleets via ESET.',
+            'N1-N2 support for SME clients: tickets, firewall, VPN, and VoIP.',
+            'Endpoint security and cloud infrastructure administration.',
         ],
-        tools: ['Ticket management', 'Stormshield', 'VPN', 'OVH Cloud', '3CX', 'Sewan', 'Unyc', 'Eset'],
+        tools: ['Stormshield', 'VPN', '3CX', 'OVH Cloud', 'Eset'],
     },
     {
         role: 'Network Technician (Internship)',
         place: 'SNS Solutions, IT services company',
-        period: 'May — June 2026',
+        period: 'May to June 2026',
         missions: [
-            'Deployed and configured a Proxmox VE server on a Dell PowerEdge R510, migrating existing services via KVM/virt-manager.',
-            'Set up automated OS deployment (MDT/WDS/PXE) for a fleet of client machines.',
-            'Administered a UniFi network through a Docker-based Controller and diagnosed backup failures (Cove Data Protection/VSS).',
+            'Infrastructure projects: virtualization with Proxmox VE, automated Windows deployment, and a UniFi network migration.',
+            'Day-to-day client support and on-site interventions.',
         ],
-        tools: ['Deployment server', 'UniFi Controller', 'Docker', 'Proxmox VE', 'Windows Server'],
+        tools: ['Proxmox VE', 'Docker', 'Windows Server', 'UniFi Controller'],
     },
 ];
 
@@ -31,7 +30,7 @@ const projects = [
         title: "L'Herbier des Mots",
         description: 'Fictional bar website built to learn PHP and MySQL from the ground up.',
         stack: 'PHP, MySQL, Bootstrap',
-        link: 'https://github.com/maillet-nills/BTS-SIO-LHerbier-Des-Mots?utm_source=chatgpt.com',
+        link: 'https://github.com/maillet-nills/BTS-SIO-LHerbier-Des-Mots',
     },
     {
         title: 'Lothlórien GUI',
@@ -126,7 +125,7 @@ export default function Home() {
                                     {item.label}
                                     {item.link && (
                                         <>
-                                            {' — '}
+                                            {' \u2014 '}
                                             <a href={item.link} target="_blank" rel="noreferrer">{item.linkLabel}</a>
                                         </>
                                     )}
@@ -159,23 +158,26 @@ export default function Home() {
                         </div>
                     ))}
                 </div>
-                <a className="cv-link" href="/assets/cv-nills-maillet.pdf" target="_blank" rel="noreferrer" download>
-                    <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    >
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                        <polyline points="7 10 12 15 17 10" />
-                        <line x1="12" y1="15" x2="12" y2="3" />
-                    </svg>
-                    Download full CV (PDF)
-                </a>
+                <div className="experience-actions">
+                    <Link className="cv-link" to="/experience">See the full details</Link>
+                    <a className="cv-link" href="/assets/cv-nills-maillet.pdf" target="_blank" rel="noreferrer" download>
+                        <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Download full CV (PDF)
+                    </a>
+                </div>
             </section>
 
             <section className="container section">
