@@ -54,6 +54,12 @@ const currentFocus = [
         linkLabel: 'Semgrep Academy',
     },
     {
+        label: 'Certified Junior Cybersecurity Analyst (HTB CJCA)',
+        detail: 'Learning core SOC operations, threat analysis, incident response, and security monitoring through Hack The Box. The CJCA certification validates practical hands-on skills required for entry-level cybersecurity analyst roles.',
+        link: 'https://academy.hackthebox.com/preview/certifications/htb-certified-junior-cybersecurity-analyst',
+        linkLabel: 'Hack The Box Academy',
+    },
+    {
         label: 'Post-quantum cryptography watch',
         detail: 'Following NIST FIPS 203/204/205 (ML-KEM, ML-DSA, SLH-DSA).',
         link: 'https://drive.google.com/drive/folders/1fYLpUNyom1N2A93T1XYzG4XbJ457KwSh?usp=drive_link',
