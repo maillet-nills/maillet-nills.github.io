@@ -119,6 +119,25 @@ export default function Home() {
                             <p className="firepit-meta-label">Platform</p>
                             <p className="firepit-meta-value">Android</p>
                         </div>
+                        <div>
+                            <p className="firepit-meta-label">Github Link</p>
+                            <a className="firepit-meta-value" href="https://github.com/maillet-nills/FirepitApplication" target="_blank">
+                                FirepitApplication
+                                <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <line x1="7" y1="17" x2="17" y2="7" />
+                                    <polyline points="7 7 17 7 17 17" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
