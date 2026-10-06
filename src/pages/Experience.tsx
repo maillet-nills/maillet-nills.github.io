@@ -36,7 +36,7 @@ const job = {
 };
 
 const documents = [
-    { label: 'Download full CV (PDF)', href: '/assets/cv-nills-maillet.pdf' },
+    { label: 'Download full CV (PDF)', href: '/assets/cv-nills-maillet-eng.pdf' },
     { label: 'Download internship report (PDF, in French)', href: '/assets/rapport-stage-nills-maillet.pdf' },
 ];
 

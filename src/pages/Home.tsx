@@ -185,7 +185,7 @@ export default function Home() {
                 </div>
                 <div className="experience-actions">
                     <Link className="cv-link" to="/experience">See the full details</Link>
-                    <a className="cv-link" href="/assets/cv-nills-maillet.pdf" target="_blank" rel="noreferrer" download>
+                    <a className="cv-link" href="/assets/cv-nills-maillet-eng.pdf" target="_blank" rel="noreferrer" download>
                         <svg
                             width="16"
                             height="16"
